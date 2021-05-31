@@ -3,7 +3,7 @@
 This is the repository for:
 
  **Introducing CAD: the Contextual Abuse Dataset** 
- Bertie Vidgen, Dong Nguyen, Helen Margetts, Patricia Rossini, Rebekah Tromble
+ Bertie Vidgen, Dong Nguyen, Helen Margetts, Patricia Rossini, Rebekah Tromble,
  NAACL 2021
   [Paper (ACL Anthology)](https://www.aclweb.org/anthology/2021.naacl-main.182/)
 
@@ -23,13 +23,14 @@ See the `environments` folder for the exact environments that were used. The LR 
  
 Directories:
 
-* `experiments`: The models and model outputs
+* `environments`:  Environments used for performing the experiments (Conda).
+* `experiments`: The models and model outputs (*not included on Github, get this on Zenodo*)
 * `src`: Python code
-* `data`: data
+* `data`: data (*not included on Github, get this on Zenodo*)
 
 **Note about the dataset (v1 vs. v1.1)**
 `cad_v1` was used to produce the results in the NAACL 2021 paper.
-We have updated the dataset based on some minor issues discovered later. This affects the primary and secondary categories of 95 entries. The new version CAD v1.1 is also provided, based on the changes recorded in `errata_v1_to_v1_1`.
+We identified some minor issues later. This affects the primary and secondary categories of 95 entries. The new version CAD v1.1 is also provided, based on the changes recorded in `data/errata_v1_to_v1_1`.
 
 
 **Overview**
@@ -130,7 +131,7 @@ See results at `http://localhost:5000/`
 
 **Testing**
 
-Based on tuning, the following hyperparameters were used `max_df=0.95, min_df=5, C=0.25`
+Based on tuning, the following hyperparameters were used: `max_df=0.95, min_df=5, C=0.25`
  
 ```
 python lr.py test
@@ -320,13 +321,14 @@ python analyze_transformers.py print_error_analysis --input_pattern "../experime
     abstract = "Online abuse can inflict harm on users and communities, making online spaces unsafe and toxic. Progress in automatically detecting and classifying abusive content is often held back by the lack of high quality and detailed datasets.We introduce a new dataset of primarily English Reddit entries which addresses several limitations of prior work. It (1) contains six conceptually distinct primary categories as well as secondary categories, (2) has labels annotated in the context of the conversation thread, (3) contains rationales and (4) uses an expert-driven group-adjudication process for high quality annotations. We report several baseline models to benchmark the work of future researchers. The annotated dataset, annotation guidelines, models and code are freely available.",
 }
 ```
+ [Paper (ACL Anthology)](https://www.aclweb.org/anthology/2021.naacl-main.182/)
 
 # Notes
 
 **Data**
 
 * `contextual_abuse_dataset.py`: Loads in the dataset. Does a few preprocessing steps.
-* `check_data.py`: Contains methods to perform a few checks on the data 
+* `check_data.py`: Contains methods to perform a few checks on the data. 
 * `data_analysis.ipynb:` A notebook that explores the data and prints out statistics. 
 
 *Notes:*
@@ -348,7 +350,7 @@ python analyze_transformers.py print_error_analysis --input_pattern "../experime
 * `analyze_transformers.py` analyze the results of the transformer models. 
 
 **Utilities**
-* `classification_util.py`: Utilities for classification (writing output and evaluation metrics to file)
+* `classification_util.py`: Utilities for classification (writing output and evaluation metrics to file).
 * `classification_analysis.py`: Analyze classification results.
 
 **Tests**

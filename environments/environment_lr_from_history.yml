@@ -1,0 +1,13 @@
+name: cad
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - scikit-learn
+  - jupyterlab
+  - ipykernel
+  - pandas
+  - pip
+  - qgrid
+
+

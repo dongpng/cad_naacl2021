@@ -1,0 +1,11 @@
+name: cad
+channels:
+  - defaults
+dependencies:
+  - pytorch
+  - torchvision
+  - cudatoolkit=10.1
+  - scikit-learn
+  - pip
+
+

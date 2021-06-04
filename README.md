@@ -7,7 +7,7 @@ This is the repository for:
  NAACL 2021
   [Paper (ACL Anthology)](https://www.aclweb.org/anthology/2021.naacl-main.182/)
 
-The data + models have been uploaded to Zenodo: [http://doi.org/10.5281/zenodo.4881008](http://doi.org/10.5281/zenodo.4881008
+The data + models have been uploaded to Zenodo: http://doi.org/10.5281/zenodo.4881008
 
 ## Install
 
